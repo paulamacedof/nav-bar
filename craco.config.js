@@ -5,7 +5,10 @@ module.exports = {
   webpack: {
     configure: (webpackConfig) => {
       // Define o publicPath para que os chunks sejam servidos corretamente do remote
-      webpackConfig.output.publicPath = "http://localhost:3003/";
+      webpackConfig.output.publicPath =
+        process.env.NODE_ENV === "production"
+          ? process.env.PUBLIC_URL + "/"
+          : "http://localhost:3003/";
 
       webpackConfig.plugins.push(
         new ModuleFederationPlugin({
