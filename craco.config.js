@@ -25,6 +25,11 @@ module.exports = {
               eager: true,
               requiredVersion: "^18.3.1",
             },
+            "react-icons": {
+              singleton: true,
+              eager: true,
+              requiredVersion: "^5.4.0",
+            },
           },
         })
       );
