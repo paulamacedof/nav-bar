@@ -11,6 +11,7 @@ interface AppProps {
 }
 
 function App({ state, setOpen }: AppProps | any) {
+  console.log(state.pathname, "micro");
   return (
     <div className="bg-[#004D61] w-full p-8">
       <section className="flex justify-between max-w-7xl m-auto">

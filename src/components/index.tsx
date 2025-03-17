@@ -51,7 +51,7 @@ export function Sidebar({
               <a
                 href={link.href}
                 className={`${
-                  pathname === link.href ? "bold text-[#FF5031] " : ""
+                  pathname === link.href ? "font-bold text-[#FF5031] " : ""
                 } ${
                   ["/investments", "/other-services"].includes(link.href)
                     ? "disabled"
