@@ -1,11 +1,8 @@
 import Hamburger from "hamburger-react";
 
 interface AppProps {
-  state: {
-    user: string;
-    toggleSidebar: boolean;
-    pathname: string;
-  };
+  toggleSidebar: boolean;
+  pathname: string;
   setOpen: (isOpen: boolean) => void;
 }
 
