@@ -1,5 +1,5 @@
 import Hamburger from "hamburger-react";
-import { Sidebar } from "./components";
+import { Sidebar } from "./components/Sidebar";
 
 interface AppProps {
   state: {
