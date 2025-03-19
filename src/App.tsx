@@ -1,5 +1,4 @@
 import Hamburger from "hamburger-react";
-import { Sidebar } from "./components/Sidebar";
 
 interface AppProps {
   state: {
@@ -24,14 +23,7 @@ function App({ state, setOpen }: AppProps | any) {
             size={24}
           />
         </span>
-        <span className="md:hidden">
-          <Sidebar
-            isMobile
-            pathname={state?.pathname}
-            isOpen={state.toggleSidebar as boolean}
-            onClose={() => setOpen(false)}
-          />
-        </span>
+
         <div className="flex items-center gap-4 md:gap-10 text-white">
           <span>{state?.user && state?.user}</span>
           <img src="/avatar.svg" alt="Avatar do Usuário" />
