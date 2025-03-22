@@ -8,7 +8,7 @@ interface AppProps {
 
 function App({ toggleSidebar, pathname, setOpen }: AppProps | any) {
   const user = localStorage.getItem("user");
-  const username = JSON.parse(user as string).username;
+  const username = user ? JSON.parse(user as string).username : "";
   return (
     <div className="bg-[#004D61] w-full p-8">
       <section className="flex justify-between max-w-7xl m-auto">
